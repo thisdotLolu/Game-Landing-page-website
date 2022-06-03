@@ -1,0 +1,466 @@
+/* *{
+    border: 1px red dotted;
+} */
+.body{
+    overflow-x: hidden;
+}
+button{
+    padding: 20px;
+    background-color: #ff4655;
+    width: 250px;
+    color: white;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-weight: bolder;
+}
+button:hover{
+    background-color: black;
+    /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+.btn_s3{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+    width: 260px;
+}
+.section1{
+    width: 100vw;
+    max-width:100%;
+    height:100vh;
+    position: relative;
+    z-index: -200;
+    background-image:linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.1)), url('../../public/images/yoru-valorant.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:600px) {
+    .home{
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right:0;
+    }
+    .container img{
+        width: 80vw;
+        height: 60px;
+        object-fit: cover;
+    }
+    .section1{
+        /* background-size: contain; */
+        background-image:linear-gradient(to top, rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url('https://64.media.tumblr.com/cbd31868a6caf0c9d4205818ceaa51f2/7f2306fbcac6cf32-a7/s540x810/4d42bf8af9a1e13b34359225aa7618cdf27f7534.gifv');
+        
+    }
+
+}
+
+/* section 2******************************22222222222222 */
+.section2{
+    padding: 50px 0;
+    width: 100vw;
+    max-width:100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:  #ece8e1;
+    z-index: -2;
+}
+.section2_container{
+    position: relative;
+    z-index: inherit;
+}
+.outlined_text{
+    overflow-x: hidden;
+    letter-spacing: 12px;
+}
+.outlined_text h1{
+    overflow-x: hidden;
+    top: -50px;
+    left: -200px;
+        height: 500px;
+        position: absolute;
+        font-family: sans-serif;
+        color: lightgray;
+        font-size: 130px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        width: 100vw;
+}
+
+.section2_news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section2_image{
+    display: flex;
+    flex-direction: column;   
+}
+
+.section2_image img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 12px;
+}
+
+.section2_image p{
+    font-size: 15px;
+    margin-left: 20%;
+}
+@media screen and (max-width:600px){
+    .outlined_text h1{
+        top: 320px;
+        height: 500px;
+        position: absolute;
+        font-family: sans-serif;
+        color: lightgray;
+        font-size: 130px;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        width: 100vw;
+        /* display: none; */
+    }
+    .valorant{
+        margin-left:150px;
+        margin-top: 550px;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+    }
+    .section2_news{
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+/* section 3*********************************************************3333333333333 */
+.section3{
+    width: 100vw;
+    max-width:100%;
+    height: 750px;
+    position: relative;
+    background-image:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.1)), url('../../public/images/firstthree.gif');
+    color: white;
+    font-size: xx-large;
+    font-weight:bolder;
+    
+}
+.section3 .accolades_container{
+    position: absolute;
+    top:200px;
+    margin-left: 70px;
+}
+.accolades_container p{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.accolades_container h1{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bolder;
+    transform:scale(1.0,1.5);
+    margin-left: -5px;
+}
+ @media screen and (max-width:600px) {
+    .section3 .accolades_container{
+        max-width: 500px;
+        margin-top: 100px;
+        margin-left: 23px;
+    }
+    .accolades_container p{
+        font-size: 10px;
+    }
+    .accolades_container h1{
+        font-size: 32px;
+        font-weight: bolder;
+        transform:scale(1.0,1.5);
+        margin-left: -5px;
+    }
+ }
+/* section 4*****************************************44444444444 */
+.section4{
+    padding: 50px 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    position: relative;
+    background-color: #ece8e1;
+    flex-wrap:wrap;
+    font-family: sans-serif;
+}
+.section4 h1{
+    
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bolder;
+    transform:scale(1.1,1.7);
+    /* margin-left: -55px; */
+    margin-left: -140px;
+}
+.section4_container{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section4_img img{
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    object-fit: cover;
+}
+@media screen and (max-width:600px) {
+    .section4 h1{
+        font-size: 25px;
+        margin-left: -17%;
+    }
+    .section4_img img{
+        width: 95vw;
+
+    }
+    .section4_text{
+        width: 93vw;
+    }
+}
+
+/* section 5 ********************************************************5555*/
+.section5{
+    width: 100vw;
+    max-width:100%;
+    height: 900px;
+    justify-content: center;
+    background-color: #ff4655;
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    /* background-image: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.1)), url('../../public/images/secondthree.gif');
+    background-repeat: no-repeat; */
+}
+.section5_container>h1{
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bolder;
+    transform:scale(0.8,1.2);
+    margin-left: -45px;
+}
+.section5 button{
+    background-color: whitesmoke;
+    color: black;
+    position: absolute;
+    top: 740px;
+    left: 500px;
+    z-index: 30000000;
+}
+.section5 button:hover{
+    background-color: black;
+    color: white;
+}
+.section5_text p{
+    z-index: 3000000;
+}
+.section5_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section5 img{
+    top: 230px;
+    width: 400px;
+    height: 750px; 
+    object-fit: cover;
+    position: absolute;
+    z-index: 20000;
+}
+@media screen and (max-width:600px){
+    .section5 button{
+        left: 80px;
+    }
+    .section5_container>h1{
+    font-size: 42px;
+    font-weight: bolder;
+    transform:scale(0.8,1.2);
+    margin-left: -1%;
+    }
+    .section5_text p{
+        z-index: 3000000;
+        margin-left: 6%;
+    }
+    .section5_text>h3{
+        margin-left: 6%;
+    }
+    .section5 img{
+        width: 360px;
+    }
+}
+
+
+/* section 7*************************************************** */
+.section7{
+    width: 100vw;
+    max-width:100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: small;
+    font-family: sans-serif;
+}
+.section7 .fsection-1{
+    background-color:dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fsection_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bolder;
+}
+.each_icon{
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: dimgrey;
+    margin: 10px;
+}
+.contacts_icons{
+    display: flex;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.footer_logos img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 10px solid grey;
+}
+
+
+/* section 6 ********************************/
+.section6{
+    width: 100vw;
+    max-width:100%;
+    height: 900px;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url('https://playvalorant.com/static/maps-03ebbf2c074f13a65af1dba0c80f767e.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 40px; */
+}
+.msection h1{
+    font-family: 'PROXON';
+    display: inline-block;
+    font-size: 72px;
+    font-weight: bolder;
+    transform:scale(0.8,1.2);
+    margin-left: -45px;
+    margin-top: 160px;
+}
+.msection-text{
+    font-family: sans-serif;
+    width: 40%;
+}
+
+@media screen and (max-width:600px) {
+    .msection h1{
+        font-size: 52px;
+        margin-left: -3%;
+    }
+    .msection-text{
+        margin-left:7%;
+        width: 70%;
+    }
+    .msection button{
+        margin-left: 26px;
+    }
+}
+
+
+/* SECTION ONE CHILDREN ---------------------------*/
+
+.section1 .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    pointer-events: none;
+}
+.splash_image{
+    width: auto;
+    height:100%;
+    position: absolute;
+    bottom:-10%;
+    z-index: -7;
+
+    pointer-events: none;
+}
+.splash_logo{
+    margin: 0 0 15px 0;
+    width: auto;
+    height: 15%;
+    position: relative;
+    top: 55%;
+    left: 5%;
+
+    pointer-events: none;
+}
+
+.sign_up{
+    width: 120px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:55%;
+    left:15%;
+
+    background-color: #ff4655;
+    box-shadow: 0 0 5px 2px  black;
+
+    pointer-events: all;
+    cursor: pointer;
+}
+.sign_up a{
+    color: #ece8e1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.gallery{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+
+
